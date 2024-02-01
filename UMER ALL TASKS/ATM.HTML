@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<input type="number" id="withdrawalAmount">
+<button onclick="atm()">Withdraw</button>
+<script>
+function atm() {
+var amount =
+parseFloat(document.getElementById("withdrawalAmount").value);
+var cb = 4000;
+var dailyLimit = 2000;
+if (isNaN(amount)) {
+alert("Please enter a valid number.");
+} else if (amount > cb) {
+alert("Withdrawal is refused");
+} else if (amount > dailyLimit) {
+alert("Withdrawal exceeds daily limit");
+} else if (cb < 5000) {
+amount-=amount * 0.02;
+alert("2% deduction is on the amount: " + amount);
+} else if(cb>=5000) {
+alert("No charge is madE");
+}
+        }
+    </script>
+</body>
+</html>

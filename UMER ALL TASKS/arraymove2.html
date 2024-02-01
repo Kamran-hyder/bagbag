@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+
+<p id="m">Array</p>
+
+
+   <script>
+
+
+      num = parseInt(prompt("enter size of array : "))
+
+
+      myarray = []
+
+
+      for(i=0;i<num;i++){
+
+
+         myarray[i]  = parseInt(prompt("enter value of array at index "+(i+1)+" : "))
+      }
+
+
+
+      for(i=0;i<num;i++){
+document.getElementById("m").innerHTML += "value at "+(i) + " : "+ myarray[i] + " </br>"
+
+          
+}
+
+if (num % 2 == 0 && num>0) {
+         alert("Positive even")
+      }
+      else  if (num % 2 == 0 && num<0) {
+         alert("Negative even")
+      }
+      else  if (num % 2 == -1 && num<0) {
+         alert("Negative odd")
+      }
+      else if (num % 2 == 1 && num>0) {
+         alert("positive odd")
+      }
+      else {
+         alert("null is not allowed")
+      }
+
+   </script>
+</body>
+
+</html>

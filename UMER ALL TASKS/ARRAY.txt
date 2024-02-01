@@ -1,0 +1,10 @@
+                                 ARRAY
+
+
+                            VARIABLE:MYNUM
+
+ 
+                                    0 1 2 3 4
+                            INT[] = 5 3 4 6 8
+
+                               (mynum[I])

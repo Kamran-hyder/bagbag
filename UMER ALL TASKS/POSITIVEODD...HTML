@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let userInput = prompt("Enter a number:");
+let number = parseInt(userInput);
+
+if (isNaN(number)) {
+    console.log("Invalid input. Please enter a valid number.");
+} else {
+    if (number === 0) {
+        console.log("The number is zero.");
+    } else if (number > 0) {
+        if (number % 2 === 0) {
+            console.log("The number is positive even.");
+        } else {
+            console.log("The number is positive odd.");
+        }
+    } else {
+        if (number % 2 === 0) {
+            console.log("The number is negative even.");
+        } else {
+            console.log("The number is negative odd.");
+        }
+    }
+}
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<label for="">ENTER YOUR TABLE</label><input type="number"placeolder="table...." id="table">
+<button onclick="tableyou()">GET YOUR TABLE</button>
+
+
+    <p id="tablee"></p>
+
+
+<script>
+
+
+function tableyou(){
+
+     tb = document.getElementById('table').value;
+     document.getElementById("tablee").innerHTML =" "
+    for(i=10;i>=1;i--){
+     document.getElementById("tablee").innerHTML+= tb+" * "+i+" = "+(tb*i)+"</br>"
+    }
+
+}
+</script>
+</body>
+</html>
